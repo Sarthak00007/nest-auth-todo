@@ -10,6 +10,11 @@ export class AppController {
     return this.appService.getHello(request, res);
   }
 
+  @Get()
+  getHelloWorld() {
+    return 'Hello World!';
+  }
+
   @Post()
   getHelloPost(@Req() request: Request, @Res() res: Response) {
     return this.appService.getHello(request, res);

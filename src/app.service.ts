@@ -8,7 +8,7 @@ export class AppService {
   async getHello(req, res) {
     const client = await clientPromise;
     const db = client.db('test-todo');
-    const collection = db.collection('allNewPosts ');
+    const collection = db.collection('allNewPosts');
     switch (req.method) {
       case 'POST':
         const bodyObject = req.body;
